@@ -41,7 +41,7 @@ class servo:
         self.set_angle(0)
         from time import sleep
         sleep(0.1)
-        self.pi.set_mode(self.servo_pin, self.pigpio.INPUT)
+        self.pi.set_mode(self.servo_pin, pigpio.INPUT)
         #self.pi.stop() # ファイナライズ
 
     def home_position(self):
